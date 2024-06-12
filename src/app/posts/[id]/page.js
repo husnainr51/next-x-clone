@@ -1,10 +1,10 @@
 import React from "react";
-import { app } from "@/firebase";
+import { app } from "../../../firebase";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
 import Link from "next/link";
 import { HiArrowLeft } from "react-icons/hi";
-import Post from "@/components/Post";
-import Comments from "@/components/Comments";
+import Post from "../../../components/Post.jsx";
+import Comments from "../../../components/Comments.jsx";
 
 export default async function PostPage({ params }) {
   const db = getFirestore(app);
